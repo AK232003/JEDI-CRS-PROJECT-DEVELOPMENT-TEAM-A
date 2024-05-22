@@ -30,4 +30,14 @@ public class Auth {
 
     }
 
+    public String getRole(String userId) {
+        // Get role of user
+        return "STUDENT";
+    }
+
+    public boolean verifyCredentials(String userId) {
+        // Verify user
+        return true;
+    }
+
 }
