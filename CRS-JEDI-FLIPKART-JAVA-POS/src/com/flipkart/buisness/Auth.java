@@ -2,8 +2,6 @@ package com.flipkart.buisness;
 
 import com.flipkart.beans.Student;
 
-import java.util.UUID;
-
 public class Auth {
 
     public void register(
@@ -15,13 +13,6 @@ public class Auth {
         String Branch,
         Integer Batch
     ) {
-
-        // Generate userId
-        String userId = UID.randomUUID().toString();
-        // Register user
-        Student newStudent=new Student(userId,name,Role.STUDENT,password,gender,address,country,branch,0,batch,false);
-        studentId=studentDaoInterface.addStudent(newStudent);
-
 
     }
 
@@ -35,7 +26,7 @@ public class Auth {
         return "STUDENT";
     }
 
-    public boolean verifyCredentials(String userId) {
+    public boolean verifyCredentials(String userId, String password) {
         // Verify user
         return true;
     }
