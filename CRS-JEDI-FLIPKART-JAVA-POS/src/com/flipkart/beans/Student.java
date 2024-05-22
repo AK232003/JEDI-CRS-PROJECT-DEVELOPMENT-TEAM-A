@@ -39,17 +39,17 @@ public class Student extends User {
         this.alternativeCourses = alternativeCourses;
     }
 
-    public ArrayList<Course> requestCatalog()
-    {
-        // here we need to send the whole catalog, presently putting the enrolled courses over here
-        return enrolledCourses;
-    }
-
-    public void enrollCourse(Course course) {
-        enrolledCourses.add(course);
-    }
-
-    public void dropCourse(Course course) {
-        // here we drop course.
-    }
+//    public ArrayList<Course> requestCatalog()
+//    {
+//        // here we need to send the whole catalog, presently putting the enrolled courses over here
+//        return enrolledCourses;
+//    }
+//
+//    public void enrollCourse(Course course) {
+//        enrolledCourses.add(course);
+//    }
+//
+//    public void dropCourse(Course course) {
+//        // here we drop course.
+//    }
 }
