@@ -1,14 +1,12 @@
 package com.flipkart.beans;
 
-public class GradeCard {
+public class SemesterRegistration {
     private int studentId;
     private int semester;
-    private double cpi;
 
-    GradeCard(int studentId, int semester, double cpi) {
+    SemesterRegistration(int studentId, int semester) {
         this.studentId = studentId;
         this.semester = semester;
-        this.cpi = cpi;
     }
 
     public int getStudentId() {
@@ -17,14 +15,6 @@ public class GradeCard {
 
     public void setStudentId(int studentId) {
         this.studentId = studentId;
-    }
-
-    public double getCpi() {
-        return cpi;
-    }
-
-    public void setCpi(double cpi) {
-        this.cpi = cpi;
     }
 
     public int getSemester() {
