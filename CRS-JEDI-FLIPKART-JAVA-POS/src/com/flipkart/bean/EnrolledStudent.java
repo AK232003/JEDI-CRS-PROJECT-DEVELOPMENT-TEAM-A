@@ -1,73 +1,75 @@
-
-package com.flipkart.beans;
-
+package com.flipkart.bean;
 /**
- *
- * @author JEDI-03
- * Class for storing details of course Student has taken
+ * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ * Class for Student, post registration
  *
  */
 public class EnrolledStudent {
     private String courseCode;
     private String courseName;
-    private int studentId;
+    private String studentId;
 
     /**
-     * Method to get Course Code
-     * @return Course Code
+     * Method to get course code
+     * @return
      */
     public String getCourseCode() {
         return courseCode;
     }
 
     /**
-     * Method to set Course Code
-     * @param courseCode: course code
+     * Method to set course code
+     * @param courseCode
      */
     public void setCourseCode(String courseCode) {
         this.courseCode = courseCode;
     }
 
     /**
-     * Method to get Course Name
-     * @return Course Name: course name
+     * Method to get course name
+     * @return
      */
     public String getCourseName() {
         return courseName;
     }
 
     /**
-     * Method to set Course Name
-     * @param courseName: course name
+     * Method to set course name
+     * @param courseName
      */
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
     /**
-     * Method to get Student Id of student enrolled in the course
-     * @return Student Id: student id
+     * Method to get student id
+     * @return
      */
-    public int getStudentId() {
+    public String getStudentId() {
         return studentId;
     }
 
     /**
-     * Method to set Student Id of student enrolled in the course
+     * Method to set student id
      * @param studentId
      */
-    public void setStudentId(int studentId) {
+    public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
 
+
     /**
-     * Parameterized constructor
+     *Default constructor
+     */
+    public EnrolledStudent(){}
+
+    /**
+     * Constructor to return enrolled student
      * @param courseCode
      * @param courseName
      * @param studentId
      */
-    public EnrolledStudent(String courseCode, String courseName, int studentId) {
-        super();
+    public EnrolledStudent(String courseCode, String courseName, String studentId) {
         this.courseCode = courseCode;
         this.courseName = courseName;
         this.studentId = studentId;
