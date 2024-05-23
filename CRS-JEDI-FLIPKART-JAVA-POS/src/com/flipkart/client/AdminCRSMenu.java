@@ -1,14 +1,15 @@
 package com.flipkart.client;
+
 import com.flipkart.bean.Course;
+import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
 import com.flipkart.constant.ColourConstant;
 import com.flipkart.exception.*;
 import com.flipkart.service.AdminService;
 import com.flipkart.service.AdminServiceOperation;
-import com.flipkart.bean.Professor;
 
+import java.util.Formatter;
 import java.util.List;
-import java.util.*;
 import java.util.Scanner;
 
 /**

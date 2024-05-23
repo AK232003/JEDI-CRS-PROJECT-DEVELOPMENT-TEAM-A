@@ -1,12 +1,12 @@
 package com.flipkart.client;
 
 
+import com.flipkart.bean.Student;
 import com.flipkart.dao.StudentDAO;
 import com.flipkart.dao.StudentDAOImpl;
 import com.flipkart.dao.UserDAO;
 import com.flipkart.dao.UserDAOImpl;
 import com.flipkart.exception.*;
-import com.flipkart.bean.Student;
 
 import java.sql.SQLException;
 import java.time.LocalDate;

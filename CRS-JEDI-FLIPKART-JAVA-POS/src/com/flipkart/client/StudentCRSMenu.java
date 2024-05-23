@@ -1,24 +1,16 @@
 package com.flipkart.client;
+
+import com.flipkart.bean.Course;
+import com.flipkart.bean.StudentGrade;
+import com.flipkart.constant.ColourConstant;
+import com.flipkart.constant.ModeOfPaymentConstant;
+import com.flipkart.service.*;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.*;
-
-import com.flipkart.bean.Course;
-import com.flipkart.dao.*;
-import com.flipkart.service.ProfessorService;
-import com.flipkart.service.ProfessorServiceOperation;
-import com.flipkart.service.RegistrationService;
-import com.flipkart.service.RegistrationServiceOperation;
-import com.flipkart.constant.ModeOfPaymentConstant;
-import com.flipkart.service.NotificationService;
-import com.flipkart.service.NotificationServiceOperation;
-import com.flipkart.constant.ColourConstant;
-
-import java.util.Scanner;
-import java.util.List;
-import com.flipkart.bean.StudentGrade;
 
 /**
  * Class for student CRS Menu
