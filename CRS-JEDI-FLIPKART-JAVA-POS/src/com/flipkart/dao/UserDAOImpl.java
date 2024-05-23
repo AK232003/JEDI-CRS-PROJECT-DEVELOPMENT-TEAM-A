@@ -1,14 +1,13 @@
 package com.flipkart.dao;
 
+import com.flipkart.constant.SQLQueriesAdmin;
+import com.flipkart.exception.UserNotFoundException;
+import com.flipkart.utils.DBUtils;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
-import com.flipkart.utils.DBUtils;
-import com.flipkart.constant.SQLQueriesAdmin;
 import java.sql.SQLException;
-
-import com.flipkart.exception.UserNotFoundException;
 
 public class UserDAOImpl implements UserDAO{
     private static volatile UserDAOImpl instance=null;

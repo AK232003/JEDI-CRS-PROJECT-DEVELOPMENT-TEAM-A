@@ -3,22 +3,14 @@ package com.flipkart.dao;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
+import com.flipkart.constant.SQLQueriesAdmin;
+import com.flipkart.exception.*;
+import com.flipkart.utils.DBUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
-import com.flipkart.exception.CourseNotFoundException;
-import com.flipkart.utils.DBUtils;
-import com.flipkart.constant.SQLQueriesAdmin;
 import java.sql.SQLException;
-
- import com.flipkart.exception.CourseFoundException;
- import com.flipkart.exception.CourseNotDeletedException;
-import com.flipkart.exception.ProfessorNotAddedException;
- import com.flipkart.exception.StudentNotFoundForApprovalException;
- import com.flipkart.exception.UserIdAlreadyInUseException;
-
 import java.util.ArrayList;
 import java.util.List;
 

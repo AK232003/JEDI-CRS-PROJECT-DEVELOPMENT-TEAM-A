@@ -1,16 +1,14 @@
 package com.flipkart.dao;
 
+import com.flipkart.bean.Student;
+import com.flipkart.constant.SQLQueriesConstants;
+import com.flipkart.exception.StudentNotRegisteredException;
+import com.flipkart.utils.DBUtils;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-
-import com.flipkart.bean.Student;
-import com.flipkart.constant.SQLQueriesConstants;
-import com.flipkart.utils.DBUtils;
-
-import com.flipkart.exception.StudentNotRegisteredException;
 public class StudentDAOImpl implements StudentDAO {
 
     private static volatile StudentDAOImpl instance=null;

@@ -1,11 +1,10 @@
 package com.flipkart.dao;
-import java.sql.SQLException;
-import java.util.List;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.StudentGrade;
 
-import com.flipkart.exception.CourseNotFoundException;
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh

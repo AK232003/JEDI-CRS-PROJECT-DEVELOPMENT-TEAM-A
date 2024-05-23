@@ -3,7 +3,9 @@ package com.flipkart.dao;
 import com.flipkart.constant.SQLQueriesConstants;
 import com.flipkart.utils.DBUtils;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class PaymentDAOImpl implements PaymentDAO{
     private static volatile PaymentDAOImpl instance=null;

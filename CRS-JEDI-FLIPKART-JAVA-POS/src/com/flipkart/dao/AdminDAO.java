@@ -3,16 +3,9 @@ package com.flipkart.dao;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
+import com.flipkart.exception.*;
 
 import java.util.List;
-import com.flipkart.exception.CourseFoundException;
-import com.flipkart.exception.CourseNotDeletedException;
-import com.flipkart.exception.CourseNotFoundException;
-import com.flipkart.exception.ProfessorNotAddedException;
-import com.flipkart.exception.StudentNotFoundForApprovalException;
-import com.flipkart.exception.UserIdAlreadyInUseException;
-import com.flipkart.exception.UserNotAddedException;
-import com.flipkart.exception.UserNotFoundException;
 
 /**
  * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh

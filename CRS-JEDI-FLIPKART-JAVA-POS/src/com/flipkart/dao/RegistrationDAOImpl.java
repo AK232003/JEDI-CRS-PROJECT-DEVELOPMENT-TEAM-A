@@ -1,17 +1,16 @@
 package com.flipkart.dao;
+
 import com.flipkart.bean.Course;
 import com.flipkart.bean.StudentGrade;
 import com.flipkart.constant.SQLQueriesConstants;
 import com.flipkart.utils.DBUtils;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.sql.SQLException;
-
-import com.flipkart.exception.CourseLimitExceedException;
-import com.flipkart.exception.CourseNotFoundException;
-import com.flipkart.exception.SeatNotAvailableException;
 
 public class RegistrationDAOImpl implements RegistrationDAO{
     private static volatile RegistrationDAOImpl instance=null;
