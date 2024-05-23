@@ -48,4 +48,7 @@ The Course Registration System (CRS) is a client-server application designed to 
    - Follow the on-screen prompts to navigate through the application.
 
 
+<img width="961" alt="Screenshot 2024-05-24 at 01 56 58" src="https://github.com/AK232003/JEDI-CRS-PROJECT-DEVELOPMENT-TEAM-A/assets/96649747/3b8f194e-fce9-403c-95e9-4d32b0edf767">
+<img width="1051" alt="Screenshot 2024-05-24 at 01 57 54" src="https://github.com/AK232003/JEDI-CRS-PROJECT-DEVELOPMENT-TEAM-A/assets/96649747/f55c0bb9-4cd3-4bc0-811a-476f4b282443">
+
 
