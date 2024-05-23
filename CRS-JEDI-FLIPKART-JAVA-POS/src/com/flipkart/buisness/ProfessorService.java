@@ -5,5 +5,6 @@ public class ProfessorService {
     }
 
     public void submitgrade(int profId) {
+
     }
 }

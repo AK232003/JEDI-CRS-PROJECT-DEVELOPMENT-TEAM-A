@@ -4,10 +4,7 @@ import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import com.flipkart.client.CRSProfessorMenu;
-
-import com.flipkart.beans.Student;
-import com.flipkart.buisness.Auth;
+import com.flipkart.buisness.AuthService;
 import com.flipkart.buisness.NotificationService;
 import com.flipkart.buisness.StudentService;
 import com.flipkart.buisness.UserService;
@@ -16,7 +13,7 @@ import com.flipkart.constant.NotificationType;
 public class MainApplication {
     static boolean loggedin = false;
 
-    Auth userAuth = new Auth();
+    AuthService userAuthService = new AuthService();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -76,12 +73,12 @@ public class MainApplication {
             userId = sc.next();
             System.out.println("Password:");
             password = sc.next();
-            loggedin = userAuth.verifyCredentials(userId, password);
+            loggedin = userAuthService.verifyCredentials(userId, password);
             if (loggedin) {
                 DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
                 LocalDateTime myDateObj = LocalDateTime.now();
                 String formattedDate = myDateObj.format(myFormatObj);
-                String role = userAuth.getRole(userId);
+                String role = userAuthService.getRole(userId);
                 switch (role) {
                     case "ADMIN":
                         System.out.println(formattedDate + " Login Successful");

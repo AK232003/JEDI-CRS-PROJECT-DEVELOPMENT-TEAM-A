@@ -1,8 +1,6 @@
 package com.flipkart.buisness;
 
-import com.flipkart.beans.Student;
-
-public class Auth {
+public class AuthService {
 
     public void register(
         String name,
