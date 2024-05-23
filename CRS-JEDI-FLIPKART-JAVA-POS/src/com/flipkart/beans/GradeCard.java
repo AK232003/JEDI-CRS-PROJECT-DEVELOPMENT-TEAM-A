@@ -17,7 +17,7 @@ public class GradeCard {
 
     public void setStudentId(int studentId) {
         this.studentId = studentId;
-    }
+    }s
 
     public double getCpi() {
         return cpi;
