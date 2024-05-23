@@ -1,6 +1,5 @@
 package com.flipkart.exception;
 
-import java.sql.SQLException;
 import com.flipkart.constant.ColourConstant;
 
 /**
