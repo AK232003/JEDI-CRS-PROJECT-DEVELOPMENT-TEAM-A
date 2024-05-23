@@ -1,28 +1,37 @@
 package com.flipkart.buisness;
+import com.flipkart.exception.StudentNotRegisteredException;
 
-public class StudentService implements StudentInterface {
-    public int getStudentId(String userId) {
-        return 0;
-    }
+/**
+ * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ * Interface for Admin Dao Operations
+ *
+ */
 
-    public boolean isApproved(int studentId) {
-        return true;
-    }
+public interface StudentService {
+    /**
+     * Method for student registration
+     * @param name
+     * @param userId
+     * @param password
+     * @param gender
+     * @param batch
+     * @param branch
+     * @param address
+     * @throws StudentNotRegisteredException
+     */
+    public void register(String name, String userId, String password, String gender, int batch, String branch, String address) throws StudentNotRegisteredException;
 
-    public static int register(String name, String userId, String password, String gender, int batch, String branchName, String address, String country) {
-        return 0;
-    }
+    /**
+     * Method to get studentId
+     * @param userId
+     * @return studentId
+     */
+    public int getStudentId(String userId);
 
-    public void registercourse(int studentid) {
-    }
-
-    public void viewresult(int studentid) {
-    }
-
-    public void viewcatalogue(int studentid) {
-    }
-
-    public void payBills(int studentid) {
-
-    }
+    /**
+     * Method to set approval
+     * @param studentId
+     * @return boolean
+     */
+    public boolean isApproved(int studentId);
 }
