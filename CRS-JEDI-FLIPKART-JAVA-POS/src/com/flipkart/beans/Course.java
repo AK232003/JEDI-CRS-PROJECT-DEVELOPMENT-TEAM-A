@@ -70,6 +70,7 @@ public class Course {
     }
 
     public String getCourseCode() {
+        return "null";
     }
 
     public void setCourseCode(String string) {

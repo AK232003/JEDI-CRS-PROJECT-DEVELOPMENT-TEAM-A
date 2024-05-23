@@ -47,9 +47,11 @@ public class Student extends User {
     }
 
     public String getBranchName() {
+        return "null";
     }
 
     public int getBatch() {
+        return 0;
     }
 
 //    public ArrayList<Course> requestCatalog()

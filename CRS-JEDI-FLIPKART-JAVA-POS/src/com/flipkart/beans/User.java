@@ -14,7 +14,7 @@ public class User {
     }
 
     public String getUserId() {
-        return userId;
+        return String.valueOf(userId);
     }
 
     public void setUserId(int userId) {
@@ -67,14 +67,18 @@ public class User {
     }
 
     public String getName() {
+        return "null";
     }
 
     public Object getGender() {
+        return "null";
     }
 
     public String getAddress() {
+        return "null";
     }
 
     public String getCountry() {
+        return "null";
     }
 }

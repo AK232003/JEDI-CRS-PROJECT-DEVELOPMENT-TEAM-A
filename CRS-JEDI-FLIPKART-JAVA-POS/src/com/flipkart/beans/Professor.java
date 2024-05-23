@@ -31,8 +31,10 @@ public class Professor extends User {
     }
 
     public String getDepartment() {
+        return "CSE";
     }
 
     public String getDesignation() {
+        return "Professor";
     }
 }
