@@ -48,8 +48,4 @@ The Course Registration System (CRS) is a client-server application designed to 
    - Follow the on-screen prompts to navigate through the application.
 
 
-### Acknowledgments:
-- Special thanks to Wylie College for providing the opportunity to develop this system.
-- Contributors: [list of contributors]
 
-**Note**: This README provides a brief overview. Refer to project documentation for detailed information on design, implementation, and usage.
