@@ -3,7 +3,7 @@ package com.flipkart.dao;
 import java.sql.SQLException;
 
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ *
  * Interface for Notification Dao Operations
  *
  */

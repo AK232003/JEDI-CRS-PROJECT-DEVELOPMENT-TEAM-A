@@ -2,7 +2,7 @@ package com.flipkart.dao;
 import java.util.Date;
 
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ *
  * Interface for Card Dao Operations
  *
  */

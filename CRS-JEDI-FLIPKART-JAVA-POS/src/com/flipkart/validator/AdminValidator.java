@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ *
  * Class for Admin Validator 
  * 
  */

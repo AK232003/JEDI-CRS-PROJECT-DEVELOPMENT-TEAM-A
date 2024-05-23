@@ -1,7 +1,7 @@
 package com.flipkart.exception;
 import com.flipkart.constant.ColourConstant;
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ *
  * Exception to check if user cannot be added
  *
  */

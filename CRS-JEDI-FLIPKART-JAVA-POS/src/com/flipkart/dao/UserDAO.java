@@ -3,7 +3,7 @@ package com.flipkart.dao;
 import com.flipkart.exception.UserNotFoundException;
 
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ *
  * Interface for User Dao Operations
  *
  */

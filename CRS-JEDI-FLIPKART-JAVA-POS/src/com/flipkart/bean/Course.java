@@ -1,7 +1,8 @@
 package com.flipkart.bean;
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
- * Class for Courses
+ *
+ *
+ * * Class for Courses
  *
  */
 public class Course {

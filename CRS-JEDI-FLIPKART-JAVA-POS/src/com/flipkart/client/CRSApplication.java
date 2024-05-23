@@ -234,7 +234,7 @@ public class CRSApplication {
         try
         {
             System.out.println("\033[0;1m------------------Update Password--------------------\033[0m");
-            System.out.println("Email");
+            System.out.println("UserID");
             userId=sc.next();
             System.out.println("New Password:");
             newPassword=sc.next();

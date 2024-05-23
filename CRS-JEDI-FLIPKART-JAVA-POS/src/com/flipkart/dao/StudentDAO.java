@@ -4,7 +4,7 @@ import com.flipkart.bean.Student;
 import com.flipkart.exception.StudentNotRegisteredException;
 
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+
  * Interface for Student Dao Operations
  *
  */

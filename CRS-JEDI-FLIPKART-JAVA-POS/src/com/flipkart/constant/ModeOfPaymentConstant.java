@@ -1,7 +1,6 @@
 package com.flipkart.constant;
 
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
  * Enumeration class for modes of payment
  *
  */
