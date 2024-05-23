@@ -5,6 +5,7 @@ import com.flipkart.bean.StudentGrade;
 import com.flipkart.constant.ColourConstant;
 import com.flipkart.constant.ModeOfPaymentConstant;
 import com.flipkart.buisness.*;
+import com.flipkart.dao.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -319,7 +320,7 @@ public class StudentCRSMenu {
      */
     private void viewGradeCard(String studentId)
     {
-        StudentDAO studentDAO=StudentDAOImpl.getInstance();
+        StudentDAO studentDAO= StudentDAOImpl.getInstance();
         Boolean isGradeCardApproved=studentDAO.checkIsGradeCard(studentId);
         if(!isGradeCardApproved)
         {
