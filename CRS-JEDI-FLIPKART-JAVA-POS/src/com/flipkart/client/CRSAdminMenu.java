@@ -6,6 +6,7 @@ package com.flipkart.client;
 
 import java.util.Scanner;
 
+import com.flipkart.buisness.AdminInterface;
 import com.flipkart.buisness.AdminService;
 
 /**
@@ -21,7 +22,7 @@ public class CRSAdminMenu {
     public void ShowOptions() {
         // TODO Auto-generated method stub
         Scanner sc = new Scanner(System.in);
-        AdminService adminService = new AdminService();
+        AdminInterface adminService = new AdminService();
         int a = 1;
         while (a != 0) {
             System.out.println("Enter the choice: ");

@@ -1,11 +1,11 @@
 package com.flipkart.buisness;
 
-public class StudentService {
-    public static int getStudentId(String userId) {
+public class StudentService implements StudentInterface {
+    public int getStudentId(String userId) {
         return 0;
     }
 
-    public static boolean isApproved(int studentId) {
+    public boolean isApproved(int studentId) {
         return true;
     }
 

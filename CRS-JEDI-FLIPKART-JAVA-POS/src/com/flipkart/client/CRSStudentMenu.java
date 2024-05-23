@@ -1,6 +1,7 @@
 package com.flipkart.client;
 
 import com.flipkart.beans.Student;
+import com.flipkart.buisness.StudentInterface;
 import com.flipkart.buisness.StudentService;
 
 import java.util.*;
@@ -19,7 +20,7 @@ public class CRSStudentMenu {
     public void ShowOptions() {
         // TODO Auto-generated method stub
         Scanner sc= new Scanner(System.in);
-        StudentService studentService = new StudentService();
+        StudentInterface studentService = new StudentService();
         int a=1;
         while(a!=0)
         {
