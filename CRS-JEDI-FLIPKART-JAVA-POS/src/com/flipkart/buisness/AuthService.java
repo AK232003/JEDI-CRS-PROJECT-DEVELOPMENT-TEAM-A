@@ -1,6 +1,6 @@
 package com.flipkart.buisness;
 
-public class AuthService {
+public class AuthService implements AuthInterface {
 
     public void register(
         String name,

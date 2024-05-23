@@ -2,6 +2,7 @@ package com.flipkart.client;
 
 import java.util.*;
 
+import com.flipkart.buisness.ProfessorInterface;
 import com.flipkart.buisness.ProfessorService;
 
 /**
@@ -16,7 +17,7 @@ public class CRSProfessorMenu {
 
     public void ShowOptions() {
         Scanner sc = new Scanner(System.in);
-        ProfessorService profService = new ProfessorService();
+        ProfessorInterface profService = new ProfessorService();
         int a = 1;
         while (a != 0) {
             System.out.println("Enter the choice: ");

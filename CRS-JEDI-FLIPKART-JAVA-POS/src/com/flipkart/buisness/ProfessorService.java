@@ -1,6 +1,6 @@
 package com.flipkart.buisness;
 
-public class ProfessorService {
+public class ProfessorService implements ProfessorInterface {
     public void selectcourse(int profId) {
     }
 

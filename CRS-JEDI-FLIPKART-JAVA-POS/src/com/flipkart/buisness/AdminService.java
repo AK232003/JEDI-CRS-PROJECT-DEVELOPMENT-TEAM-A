@@ -1,6 +1,6 @@
 package com.flipkart.buisness;
 
-public class AdminService {
+public class AdminService implements AdminInterface {
     public void addCourse(int adminId) {
     }
 
