@@ -5,8 +5,8 @@ import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
 import com.flipkart.constant.ColourConstant;
 import com.flipkart.exception.*;
-import com.flipkart.service.AdminService;
-import com.flipkart.service.AdminServiceOperation;
+import com.flipkart.buisness.AdminService;
+import com.flipkart.buisness.AdminServiceOperation;
 
 import java.util.Formatter;
 import java.util.List;

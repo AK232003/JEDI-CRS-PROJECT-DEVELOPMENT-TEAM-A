@@ -7,8 +7,8 @@ import com.flipkart.constant.ColourConstant;
 import com.flipkart.dao.ProfessorDAO;
 import com.flipkart.dao.ProfessorDAOImpl;
 import com.flipkart.exception.*;
-import com.flipkart.service.ProfessorService;
-import com.flipkart.service.ProfessorServiceOperation;
+import com.flipkart.buisness.ProfessorService;
+import com.flipkart.buisness.ProfessorServiceOperation;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
