@@ -13,7 +13,7 @@ public class User {
         this.password = password;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -52,5 +52,29 @@ public class User {
     public void updateDetails(String userName, String password) {
         this.userName = userName;
         this.password = password;
+    }
+
+    public void setName(String string) {
+    }
+
+    public void setGender(Object o) {
+    }
+
+    public void setAddress(String string) {
+    }
+
+    public void setCountry(String string) {
+    }
+
+    public String getName() {
+    }
+
+    public Object getGender() {
+    }
+
+    public String getAddress() {
+    }
+
+    public String getCountry() {
     }
 }

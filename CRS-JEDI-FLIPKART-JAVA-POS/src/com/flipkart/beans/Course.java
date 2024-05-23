@@ -8,13 +8,17 @@ public class Course {
     private int minCapacity;
     private int currentEnrolled;
 
-    Course(int courseId, String courseName, String prerequisite, int maxCapacity, int minCapacity, int currentEnrolled) {
+    public Course(int courseId, String courseName, String prerequisite, int maxCapacity, int minCapacity, int currentEnrolled) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.prerequisite = prerequisite;
         this.maxCapacity = maxCapacity;
         this.minCapacity = minCapacity;
         this.currentEnrolled = currentEnrolled;
+    }
+
+    public Course() {
+
     }
 
     public int getCourseId() {
@@ -63,5 +67,14 @@ public class Course {
 
     public void setCurrentEnrolled(int currentEnrolled) {
         this.currentEnrolled = currentEnrolled;
+    }
+
+    public String getCourseCode() {
+    }
+
+    public void setCourseCode(String string) {
+    }
+
+    public void setInstructorId(String string) {
     }
 }

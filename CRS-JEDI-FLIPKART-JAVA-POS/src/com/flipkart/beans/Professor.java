@@ -29,4 +29,10 @@ public class Professor extends User {
     public void setCourses(ArrayList<Course> courses) {
         this.courses = courses;
     }
+
+    public String getDepartment() {
+    }
+
+    public String getDesignation() {
+    }
 }

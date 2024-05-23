@@ -8,11 +8,15 @@ public class Student extends User {
     private ArrayList<Course> enrolledCourses;
     private ArrayList<Course> alternativeCourses;
 
-    Student(int id, String firstName, String password, String emailAddress) {
+    public Student(int id, String firstName, String password, String emailAddress) {
         super(id, firstName, "Student", password);
         this.emailAddress = emailAddress;
         this.enrolledCourses = new ArrayList<>();
         this.alternativeCourses = new ArrayList<>();
+    }
+
+    public Student() {
+        super();
     }
 
     public String getEmailAddress() {
@@ -37,6 +41,15 @@ public class Student extends User {
 
     public void setAlternativeCourses(ArrayList<Course> alternativeCourses) {
         this.alternativeCourses = alternativeCourses;
+    }
+
+    public void setStudentId(int anInt) {
+    }
+
+    public String getBranchName() {
+    }
+
+    public int getBatch() {
     }
 
 //    public ArrayList<Course> requestCatalog()
