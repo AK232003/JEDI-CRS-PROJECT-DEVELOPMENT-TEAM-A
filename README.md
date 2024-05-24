@@ -4,7 +4,7 @@ Priyansh Mehta,
 Arya Kondawar,
 Anurag Kushwah,
 Yasasvi Vejendla,
-Poojitha Kopoora
+Poojitha Kopoori
 
 **Course Registration System (CRS) - README**
 
