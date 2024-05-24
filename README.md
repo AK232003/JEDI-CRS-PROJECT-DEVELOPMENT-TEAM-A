@@ -3,8 +3,8 @@ Janhavi Singh,
 Priyansh Mehta,
 Arya Kondawar,
 Anurag Kushwah,
-Yasasvi,
-Poojitha
+Yasasvi Vejendla,
+Poojitha Kopoora
 
 **Course Registration System (CRS) - README**
 
