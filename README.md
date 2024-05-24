@@ -1,12 +1,12 @@
-### **Team Members** 
+### Course Registration System (CRS)
+
+### Team Members 
 - Janhavi Singh,
 - Priyansh Mehta,
 - Arya Kondawar,
 - Anurag Kushwah,
 - Yasasvi Vejendla,
 - Poojitha Kopoori
-
-**Course Registration System (CRS) - README**
 
 ### Overview:
 The Course Registration System (CRS) is a client-server application designed to replace Wylie College's outdated mainframe registration system. It enables students to register for courses, view report cards, and facilitates professors in managing courses and grades. This README provides an overview of the system's design, functionality, and development process.
