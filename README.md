@@ -1,10 +1,10 @@
-**Team Members** -> 
-Janhavi Singh,
-Priyansh Mehta,
-Arya Kondawar,
-Anurag Kushwah,
-Yasasvi Vejendla,
-Poojitha Kopoori
+### **Team Members** 
+- Janhavi Singh,
+- Priyansh Mehta,
+- Arya Kondawar,
+- Anurag Kushwah,
+- Yasasvi Vejendla,
+- Poojitha Kopoori
 
 **Course Registration System (CRS) - README**
 
