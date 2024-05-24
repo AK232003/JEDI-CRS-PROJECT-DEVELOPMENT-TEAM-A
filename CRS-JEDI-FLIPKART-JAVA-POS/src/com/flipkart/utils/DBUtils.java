@@ -15,7 +15,7 @@ public class DBUtils {
 
     //  Database credentials
     static final String USER = "root";
-    static final String PASS = "priyanshmehta61";
+    static final String PASS = "Arya@213504";
     private static Connection connection = null;
 
     /**

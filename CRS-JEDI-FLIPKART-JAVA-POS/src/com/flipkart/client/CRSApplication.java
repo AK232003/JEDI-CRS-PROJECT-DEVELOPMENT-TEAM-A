@@ -54,6 +54,7 @@ public class CRSApplication {
             } catch (InputMismatchException ex) {
                 System.out.println("Enter correct input");
                 sc.nextLine();
+//                System.out.println();
             }
 
 
@@ -62,16 +63,19 @@ public class CRSApplication {
             switch(userInput){
                 case 1:
                     crsApplication.loginUser();
+                    userInput=0;
                     System.out.println("---------------------------------------------------------------------------------------------------");
                     System.out.println("---------------------------------------------------------------------------------------------------");
                     break;
                 case 2:
                     crsApplication.registerStudent();
+                    userInput=0;
                     System.out.println("---------------------------------------------------------------------------------------------------");
                     System.out.println("---------------------------------------------------------------------------------------------------");
                     break;
                 case 3:
                     crsApplication.updatePassword();
+                    userInput=0;
                     System.out.println("---------------------------------------------------------------------------------------------------");
                     System.out.println("---------------------------------------------------------------------------------------------------");
                     break;
@@ -80,6 +84,7 @@ public class CRSApplication {
                     return;
                 default:
                     System.out.println("Invalid Menu Input");
+                    userInput=0;
                     System.out.println("---------------------------------------------------------------------------------------------------");
                     System.out.println("---------------------------------------------------------------------------------------------------");
             }
