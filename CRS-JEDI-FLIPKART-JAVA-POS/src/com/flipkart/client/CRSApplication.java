@@ -7,12 +7,23 @@ import com.flipkart.dao.StudentDAOImpl;
 import com.flipkart.dao.UserDAO;
 import com.flipkart.dao.UserDAOImpl;
 import com.flipkart.exception.*;
+import com.flipkart.utils.DBUtils;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
+import java.time.Duration;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 
 
 /**
@@ -22,7 +33,7 @@ public class CRSApplication {
     static boolean loggedin = false;
     StudentDAO studentDAO=StudentDAOImpl.getInstance();
     UserDAO userInterface = UserDAOImpl.getInstance();
-
+    private PreparedStatement stmt = null;
     /**
      * Main method of the application
      * @param args
@@ -45,6 +56,7 @@ public class CRSApplication {
 
         Scanner sc = new Scanner(System.in);
         CRSApplication crsApplication=new CRSApplication();
+
         int userInput=0;
         while(true){
             createMainMenu();
@@ -101,6 +113,13 @@ public class CRSApplication {
      * Method to create menu
      */
     public static void createMainMenu(){
+        // LocalDateTime represents both date and time
+        LocalDateTime dateTime = LocalDateTime.now();
+        // Extract date and time components
+        LocalDate date = dateTime.toLocalDate();
+        LocalTime time = dateTime.toLocalTime();
+        System.out.println("\033[0;1m Date: " + date + "\033[0m");
+        System.out.println("\033[0;1m Current Time: " + time + "\033[0m");
         System.out.println("\033[0;1m-------------Welcome to Course Registration System (CRS) ! Choose from the options given below-------------\033[0m");
         System.out.println("             1. Login");
         System.out.println("             2. Registration of Student");
@@ -148,14 +167,26 @@ public class CRSApplication {
             else if(role.equalsIgnoreCase("Professor")){
                 LocalDate localDate = LocalDate.now();
                 LocalTime localTime = LocalTime.now();
-                System.out.println("Hi, you have successfully logged in at " + localTime+ " on "+ localDate +"\n");
+                Connection conn = DBUtils.getConnection();
+                stmt = conn.prepareStatement("select name from user where userid = ?");
+                stmt.setString(1, userId);
+                ResultSet rs = stmt.executeQuery();
+                rs.next();
+                String name = rs.getString("name");
+                System.out.println("Hi " + name + ", you have successfully logged in at " + localTime+ " on "+ localDate +"\n");
                 ProfessorCRSMenu prof = new ProfessorCRSMenu();
                 prof.createMenu(userId,password);
             }
             else if(role.equalsIgnoreCase("Admin")){
                 LocalDate localDate = LocalDate.now();
                 LocalTime localTime = LocalTime.now();
-                System.out.println("Hi, you have successfully logged in at " + localTime+ " on "+ localDate +"\n");
+                Connection conn = DBUtils.getConnection();
+                stmt = conn.prepareStatement("select name from user where userid = ?");
+                stmt.setString(1, userId);
+                ResultSet rs = stmt.executeQuery();
+                rs.next();
+                String name = rs.getString("name");
+                System.out.println("Hi " + name + ", you have successfully logged in at " + localTime+ " on "+ localDate +"\n");
                 AdminCRSMenu admin=new AdminCRSMenu();
                 admin.createMenu();
             }

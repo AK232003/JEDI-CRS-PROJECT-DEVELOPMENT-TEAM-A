@@ -6,7 +6,12 @@ import com.flipkart.constant.ColourConstant;
 import com.flipkart.constant.ModeOfPaymentConstant;
 import com.flipkart.buisness.*;
 import com.flipkart.dao.*;
+import com.flipkart.utils.DBUtils;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -23,13 +28,13 @@ public class StudentCRSMenu {
     ProfessorService professorInterface = new ProfessorServiceOperation();
     NotificationService notificationInterface=NotificationServiceOperation.getInstance();
     private boolean is_registered,is_loggedin;
+    private PreparedStatement stmt = null;
 
     /**
      * Method to create student menu
      * @param studentId
      */
-    public void createMenu(String studentId)
-    {
+    public void createMenu(String studentId) throws SQLException {
 
         int choice = 0;
         is_loggedin = getLoginStatus(studentId);
@@ -39,9 +44,16 @@ public class StudentCRSMenu {
             System.out.println("Registration is not approved. Wait for Admin approval.");
             return;
         }
+
+        Connection conn = DBUtils.getConnection();
+        stmt = conn.prepareStatement("select name from user where userid = ?");
+        stmt.setString(1, studentId);
+        ResultSet rs = stmt.executeQuery();
+        rs.next();
+        String name = rs.getString("name");
         LocalDate localDate = LocalDate.now();
         LocalTime localTime = LocalTime.now();
-        System.out.println("Hi, you have successfully logged in at " + localTime+ " on "+ localDate +"\n");
+        System.out.println("Hi " + name + ", you have successfully logged in at " + localTime+ " on "+ localDate +"\n");
         while(true) {
             System.out.println("*****************************");
             System.out.println("**********Student Menu*********");
