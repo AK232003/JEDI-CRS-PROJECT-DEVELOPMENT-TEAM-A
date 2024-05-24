@@ -54,7 +54,7 @@ public class CRSApplication {
             } catch (InputMismatchException ex) {
                 System.out.println("Enter correct input");
                 sc.nextLine();
-//                System.out.println();
+                System.out.println();
             }
 
 
