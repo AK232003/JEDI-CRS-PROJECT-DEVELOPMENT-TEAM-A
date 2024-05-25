@@ -1,6 +1,7 @@
 package com.flipkart.constant;
 
 /**
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Class for queries related to Admin
  */
 public class SQLQueriesAdmin {

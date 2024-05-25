@@ -1,7 +1,7 @@
 package com.flipkart.exception;
 
 /**
- *
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Exception to check if student is not registered
  *
  */

@@ -2,6 +2,7 @@ package com.flipkart.constant;
 
 
 /**
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Class containing queries related to Professor
  */
     //Professor Queries

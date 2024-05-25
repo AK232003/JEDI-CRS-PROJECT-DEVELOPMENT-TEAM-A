@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * @author JEDI-Group-C Praneet, Rishabh, Akhil, Manan, Nidhi, Shivanshu, Divyansh
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Interface for Admin Dao Operations
  *
  */

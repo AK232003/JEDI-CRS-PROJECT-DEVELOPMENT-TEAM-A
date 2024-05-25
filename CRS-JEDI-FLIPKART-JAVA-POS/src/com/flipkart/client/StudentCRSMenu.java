@@ -19,6 +19,7 @@ import java.time.LocalTime;
 import java.util.*;
 
 /**
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Class for student CRS Menu
  */
 public class StudentCRSMenu {

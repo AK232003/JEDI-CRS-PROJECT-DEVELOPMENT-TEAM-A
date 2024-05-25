@@ -4,7 +4,7 @@ import com.flipkart.constant.ColourConstant;
 
 
 /**
- *
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Exception to check if seats are available for course registration
  *
  */

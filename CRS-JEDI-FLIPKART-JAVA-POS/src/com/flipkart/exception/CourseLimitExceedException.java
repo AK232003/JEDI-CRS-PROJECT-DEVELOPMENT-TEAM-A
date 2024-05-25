@@ -7,7 +7,7 @@ import com.flipkart.constant.ColourConstant;
 
 
 /**
- *
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Exception to check if the maximum number of registered courses is exceeded
  *
  */

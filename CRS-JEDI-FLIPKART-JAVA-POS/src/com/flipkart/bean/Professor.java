@@ -1,6 +1,6 @@
 package com.flipkart.bean;
 /**
- *
+ * @author JEDI-A group Janhavi,Anurag,Mehta,Arya,poojitha,yasavi
  * Class for Professor
  *
  */

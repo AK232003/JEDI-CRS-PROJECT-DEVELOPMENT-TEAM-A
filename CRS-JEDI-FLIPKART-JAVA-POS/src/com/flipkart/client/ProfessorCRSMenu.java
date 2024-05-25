@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
+ * @author JEDI-A group Janhavi,Anurag,Priyansh,Arya,poojitha,yasavi
  * Class for Professor CRS Menu
  */
 public class ProfessorCRSMenu {
